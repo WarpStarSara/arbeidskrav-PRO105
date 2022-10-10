@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  /* Bakgrunnen til siden */
+
+  background: url(../Images/background-tent.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Kode for å få karakteren og tekstboblen posisjonert riktig  */
+.tom-nook {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 500px;
+  scale: 0.5;
+}
+
+.tom-nook-bubble {
+  display: flex;
+  position: absolute;
+  top: 480px;
+  left: 195px;
+  width: 10px;
+  height: auto;
+  scale: 1.25;
+  z-index: 100;
+}
+
+.bubble-text-alignment {
+  width: 800px;
+
+  text-align: center;
+
+  display: flex;
+  position: absolute;
+  top: 495px;
+  left: 325px;
+  z-index: 200;
+}
+
+.bubble-text {
+  font-family: AnimalCrossing;
+  color: rgb(128, 118, 92);
+  font-size: 25px;
+}
+
+/* Egen font som er lagt inn. Den er basert på fonten i spillet Animal Crossing */
+
+@font-face {
+  font-family: AnimalCrossing;
+  src: url(../FOT-Rodin-Pro-UB.otf);
+}
+
+/* Kode for å få karakteren til å klappe */
+
+.flexbox-container {
+  display: flex;
+  position: absolute;
+  border: 2px;
+}
+
+.nook-clapping {
+  position: absolute;
+  top: 165px;
+  right: 600px;
+
+  width: 250px;
+  height: 350px;
+  background-image: url(../Images/nook-still.png);
+  background-size: cover;
+  background-position: 50%;
+  background-size: 525px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.nook-clapping:hover {
+  background-image: url(../Images/Tom-Nook.gif);
+}
+
+/* Posisjonering og animasjon av ballongen */
+
+.ballon-gift {
+  scale: 0.75;
+
+  position: absolute;
+  display: flex;
+  bottom: 450px;
+  left: 100px;
+
+  animation-name: moveBallon;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveBallon {
+  0% {
+    left: 100px;
+    bottom: 450px;
+  }
+  25% {
+    left: 800px;
+    bottom: 400px;
+  }
+  50% {
+    left: 100px;
+    bottom: 450px;
+  }
+  75% {
+    left: 700px;
+    bottom: 450px;
+  }
+  100% {
+    left: 100px;
+    bottom: 450px;
+  }
+}
+
+/* Styling av linker */
+
+a:link {
+  color: rgb(81, 179, 206);
+}
+
+a:visited {
+  color: rgb(81, 179, 206);
+}
+
+#resetti {
+  color: red;
+}
+
+/* Animasjon for snakkeboblen */
+
+.speech-bubble {
+  transition: all 0.2s ease-in-out;
+}
+
+.speech-bubble:hover {
+  transform: scale(1.01);
+}

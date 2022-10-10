@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  background-image: url(../Images/ac-sky1.jpeg);
+  background-size: cover;
+}
+/*Animasjon for ballongen*/
+.ballon-gift {
+  position: absolute;
+  display: flex;
+  top: -11%;
+  left: 100px;
+
+  animation-name: moveBallon;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveBallon {
+  0% {
+    left: 100px;
+    top: -11%;
+  }
+  25% {
+    left: 800px;
+    top: -15%;
+  }
+  50% {
+    left: 100px;
+    top: -25%;
+  }
+  75% {
+    left: 700px;
+    top: -10%;
+  }
+  100% {
+    left: 100px;
+    top: -11%;
+  }
+}
+
+/* Alt som viser spillene, teksboblene til spillene
+og teksten med informasjon. Hover, Bilder, Posisjoneringer osv
+
+Bildebakgrunn til border rundt hus */
+.house-background {
+  padding: 10px;
+  border-radius: 5%;
+  background-image: url(../Images/wood.jpeg);
+  width: 150px;
+  height: 200px;
+  position: absolute;
+}
+
+/* HUS 1 */
+.house-one {
+  position: absolute;
+  left: 35%;
+  height: 100px;
+  width: 100px;
+  top: 85%;
+}
+
+#gamecube {
+  position: absolute;
+  width: 150px;
+}
+
+#gamecube:hover {
+  transform: scale(1.5);
+}
+
+#text-bubble-house-one {
+  position: absolute;
+  left: 50%;
+  height: 200px;
+  width: 500px;
+  top: 87%;
+}
+#house-one-para {
+  width: 400px;
+  position: absolute;
+  left: 54%;
+  top: 92%;
+  font-family: AnimalCrossing;
+  font-size: 11.5px;
+  padding: 5px;
+  color: rgb(86, 79, 62);
+}
+
+/* HUS 2 */
+.house-two {
+  right: 15%;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 126%;
+}
+
+#ds {
+  position: absolute;
+  width: 150px;
+}
+#ds:hover {
+  transform: scale(1.5);
+}
+
+#text-bubble-house-two {
+  position: absolute;
+  left: 35%;
+  height: 200px;
+  width: 500px;
+  bottom: -60%;
+}
+#house-two-para {
+  width: 400px;
+  position: absolute;
+  left: 40%;
+  bottom: -55%;
+  font-family: AnimalCrossing;
+  font-size: 12px;
+  padding: 5px;
+  color: rgb(86, 79, 62);
+}
+
+/* HUS 3 */
+.house-three {
+  position: absolute;
+  left: 35%;
+  height: 100px;
+  width: 100px;
+  bottom: -83%;
+}
+
+#threeds {
+  position: absolute;
+  width: 150px;
+}
+#threeds:hover {
+  transform: scale(1.5);
+}
+
+#text-bubble-house-three {
+  position: absolute;
+  left: 55%;
+  height: 200px;
+  width: 500px;
+  bottom: -103%;
+}
+#house-three-para {
+  width: 400px;
+  position: absolute;
+  left: 59%;
+  bottom: -100%;
+  font-family: AnimalCrossing;
+  font-size: 12px;
+  padding: 5px;
+  color: rgb(86, 79, 62);
+}
+
+/* HUS 4 */
+.house-four {
+  position: absolute;
+  right: 15%;
+  height: 100px;
+  width: 100px;
+  bottom: -125%;
+}
+
+#switch {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+}
+#switch:hover {
+  transform: scale(1.5);
+}
+
+#text-bubble-house-four {
+  position: absolute;
+  left: 30%;
+  height: 200px;
+  width: 565px;
+  bottom: -140%;
+}
+#house-four-para {
+  width: 500px;
+  position: absolute;
+  left: 32%;
+  bottom: -137%;
+  font-family: AnimalCrossing;
+  font-size: 11.5px;
+  padding: 10px;
+  color: rgb(86, 79, 62);
+}
+
+/* Logoen øverst på skjermen */
+#logo {
+  width: 220px;
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+/* Musikk */
+#ac-music {
+  opacity: 0%;
+  width: 400px;
+  height: 100px;
+  left: 20px;
+  top: 71%;
+  position: absolute;
+}
+
+#ac-music-photo {
+  width: 400px;
+  height: 60px;
+  left: 0%;
+  top: 540px;
+  position: absolute;
+}
+
+/* Animasjoner og utseende til 'Special Characters' boksen. Få dyrene til å røre på seg, 
+og hvordan selve boksen ser ut. */
+.fun-facts-border {
+  border-radius: 10%;
+  width: 325px;
+  height: 300px;
+  background-color: #fdf2c3;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.fun-facts-background {
+  padding: 20px;
+  border-radius: 10%;
+  background-image: url(../Images/wood.jpeg);
+  width: 325px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 25px;
+}
+
+.flexbox-container {
+  display: flex;
+  position: absolute;
+  border: 2px;
+  left: -30px;
+  top: 20px;
+}
+
+.slider-guitar {
+  width: 100px;
+  height: 160px;
+  background-image: url(../Images/stille-kk.png);
+  background-size: cover;
+  background-position: 45%;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slider-guitar:hover {
+  background-image: url(../Images/kk-slider.gif);
+}
+
+.flexbox-container-isa {
+  display: flex;
+  position: absolute;
+  border: 2px;
+  left: -50px;
+  top: 40%;
+}
+.isabelle-move {
+  width: 150px;
+  height: 200px;
+  background-image: url(../Images/stille-isabell.png);
+  background-size: cover;
+  background-position: 45%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.isabelle-move:hover {
+  background-image: url(../Images/isabelle-gif.gif);
+  background-size: 132px;
+}
+
+/* Alt som tilhører teksten i 'Special Characters' boblen. */
+#fun-facts-text {
+  color: rgb(86, 79, 62);
+  left: 20%;
+  top: -2%;
+  font-family: AnimalCrossing;
+  position: absolute;
+}
+.bubble-1 {
+  width: 280px;
+  position: absolute;
+  left: 40px;
+  top: 50px;
+}
+
+#bubble-1-text {
+  position: absolute;
+  font-family: AnimalCrossing;
+  top: 52px;
+  left: 80px;
+  font-size: 12px;
+  color: rgb(128, 118, 92);
+}
+
+.bubble-2 {
+  width: 290px;
+  position: absolute;
+  top: 170px;
+  left: 35px;
+}
+
+#bubble-2-text {
+  position: absolute;
+  font-family: AnimalCrossing;
+  top: 175px;
+  left: 80px;
+  font-size: 11px;
+  padding: 5px;
+  color: rgb(128, 118, 92);
+}
+
+/* Bildene i toppen og bunnen av skjermen. 'Bakgrunnen' til siden. */
+#sky-top {
+  background-image: url(../Images/ac-skygif1.gif);
+  width: 325px;
+  height: 450px;
+}
+
+#grass-bottom {
+  background-image: url(../Images/grass.png);
+  width: 100%;
+  max-width: 100%;
+  height: 1450px;
+  border-radius: 2% 2% 0px 0px;
+  position: relative;
+  top: 430px;
+}
+
+/* dekorasjonene i bakgrunnen! */
+#tree-one {
+  width: 210px;
+  position: absolute;
+  left: 25%;
+  bottom: 15%;
+}
+
+#tree-two {
+  width: 305px;
+  position: absolute;
+  left: 40%;
+  bottom: 12%;
+}
+#museum {
+  width: 37%;
+  position: absolute;
+  left: 65%;
+  bottom: 15%;
+
+  object-fit: cover;
+}
+#blathers {
+  width: 180px;
+  position: absolute;
+  left: 80%;
+  bottom: 17.5%;
+}
+#villager-tent-photo {
+  position: absolute;
+  width: 350px;
+  left: 2%;
+  bottom: -55%;
+}
+#photograph-collage {
+  position: absolute;
+  width: 400px;
+  left: 1%;
+  bottom: -12%;
+}
+
+#collage-two {
+  position: absolute;
+  width: 150px;
+  left: 2%;
+  bottom: -110%;
+}
+
+#collage-three {
+  position: absolute;
+  width: 150px;
+  left: 16%;
+  bottom: -110%;
+}
+/*Egen font som er lagt inn. Den er basert på fonten i spillet Animal Crossing */
+@font-face {
+  font-family: AnimalCrossing;
+  src: url(../FOT-Rodin-Pro-UB.otf);
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Crossing</title>
+    <link rel="stylesheet" href="../CSS/ac-main-page.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../Images/leaf.png" />
+    </head>
+    <!--Dette er side to av Animal Crossing prosjektet, aka Hovedsiden-->
+    <body>
+      <!-- Bakgrunnen til siden. Himmel og gress.-->
+      <a href="../HTML/landing-page.html">
+        <div>
+          <img src="../Images/logo_2x.png" id="logo" alt="Logo av spill"/>
+        </div>
+      </a>
+
+      <div id="grass-bottom"></div>
+
+      <!--Bakgrunn og pynt til bakgrunne. Som trær, ballong animasjon osv-->
+      <img src="../Images/museum(1).png" id="museum" alt="a museum"/>
+      <img src="../Images/Blathers_NH.png" id="blathers" alt="a cartoon owl"/>
+      <img
+        src="../Images/tent-villager.png"
+        id="villager-tent-photo"
+        alt="a cartoon villager and a pink cartoon deer by a tent"
+      />
+      <img
+        src="../Images/photograph-villager.png"
+        id="photograph-collage"
+        alt="a collage of pictures of Animal Crossing"
+      />
+      <img
+        src="../Images/char1.png"
+        id="collage-two"
+        alt="a collage of pictures of Animal Crossing"
+      />
+      <img
+        src="../Images/char2.png"
+        id="collage-three"
+        alt="a collage of pictures of Animal Crossing"
+      />
+      <img src="../Images/tree.png" id="tree-one" alt="a tree" />
+      <img src="../Images/tree-two.png" id="tree-two" alt="a tree" />
+      <img
+        src="../Images/balloon-gift.png"
+        class="ballon-gift"
+        alt="a balloon"
+      />
+
+      <!--Musikkspiller som spiller av Title Screen sangen til ett Animal Crossing spill-->
+      <img
+        src="../Images/audio-bubble.png"
+        id="ac-music-photo"
+        alt="a text bubble"
+      />
+      <audio controls autoplay id="ac-music">
+        <source
+          src="../audio/Title-Screen-Animal-Crossing_Wild-World.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <!--Figurer fra spillet som har en snakkeboble hvor de forteller om seg selv, med hover som animerer dem.-->
+      <div class="fun-facts-background">
+        <div class="fun-facts-border">
+          <p id="fun-facts-text">Hover over the animals!</p>
+
+          <img
+            src="../Images/k-k-bubble-removebg-preview.png"
+            class="bubble-1"
+            alt="a text bubble"
+          />
+          <p id="bubble-1-text">
+            Hi i'm<span style="color: #f1941b"> K.K. Slider</span>. I am a
+            famous musician, and play songs on my guitar..
+          </p>
+          <div class="flexbox-container">
+            <div class="slider-guitar"></div>
+          </div>
+
+          <img
+            src="../Images/isabelle-chat-bubble.png"
+            class="bubble-2"
+            alt="a text bubble"
+          />
+          <p id="bubble-2-text">
+            I'm <span style="color: #f1941b">Isabelle</span>! I work as an
+            assistant and secretary. Come to me with questions and concerns!
+          </p>
+          <div class="flexbox-container-isa">
+            <div class="isabelle-move"></div>
+          </div>
+        </div>
+      </div>
+      <!--Paragraf tekst som ligger inne i 'bobbler' ved siden av bilder av de forskjellige spillene. 
+        De ligger ved siden av hverandre.-->
+      <div class="house-one">
+        <div class="house-background">
+          <img
+            src="../Images/gamecube.jpg"
+            id="gamecube"
+            alt="animal crossing game"
+          />
+        </div>
+      </div>
+      <div class="house-one-text">
+        <img src="../Images/bubble2.png" id="text-bubble-house-one" alt="Talking bubble"/>
+        <p id="house-one-para">
+          <span style="color: #f1941b">Animal Crossing</span> (Animal Crossing:
+          Population Growing) is first game in the Animal Crossing series to
+          reach nations outside Japan
+          <!-- released in YEAR. legg in når spillet kom ut-->
+          (second overall game) The game was developed solely for the Nintendo
+          GameCube.
+        </p>
+      </div>
+
+      <div class="house-two">
+        <div class="house-background">
+          <img
+            src="../Images/wild-world.jpg"
+            id="ds"
+            alt="animal crossing wild word game"
+          />
+        </div>
+      </div>
+      <div class="house-two-text">
+        <img
+          src="../Images/bubble2.png"
+          id="text-bubble-house-two"
+          alt="a text bubble"
+        />
+        <p id="house-two-para">
+          <span style="color: #f1941b">Animal Crossing: Wild World</span> was
+          released in 2005 for the Nintendo DS. It is a follow-up to the 2001
+          Nintendo GameCube game Animal Crossing. The game sold a total of 11.75
+          million copies as of September 2020.
+        </p>
+      </div>
+
+      <div class="house-three">
+        <div class="house-background">
+          <img
+            src="../Images/new-leaf.jpg"
+            id="threeds"
+            alt="animal crossing new leaf game"
+          />
+        </div>
+      </div>
+      <div class="house-three-text">
+        <img
+          src="../Images/bubble2.png"
+          id="text-bubble-house-three"
+          alt="a text bubble"
+        />
+        <p id="house-three-para">
+          <span style="color: #f1941b">Animal Crossing: New Leaf</span> is a
+          game for the Nintendo 3DS released in 2012. It is the fourth main
+          installment in the Animal Crossing series. What's different to New
+          Leaf from other games is the player taking on the role of mayor of the
+          town, having more control over it than in previous games.
+        </p>
+      </div>
+
+      <div class="house-four">
+        <div class="house-background">
+          <img
+            src="../Images/new-horizons.jpg"
+            id="switch"
+            alt="animal crossing new horizons game"
+          />
+        </div>
+      </div>
+      <div class="house-four-text">
+        <img
+          src="../Images/bubble2.png"
+          id="text-bubble-house-four"
+          alt="a text bubble"
+        />
+        <p id="house-four-para">
+          <span style="color: #f1941b"> Animal Crossing: New Horizons</span>
+          released on March 20, 2020 for the Nintendo Switch. In this game the
+          player lives on a deserted island rather than in a town, which can
+          develop into a town-like community as players progress through the
+          game. The game is a critical and commercial success, selling over 39
+          million copies as of June 2022.
+        </p>
+      </div>
+      <!--Slutt på siden!-->
+    </body>
+</html>
